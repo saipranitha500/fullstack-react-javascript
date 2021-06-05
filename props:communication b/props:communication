@@ -1,0 +1,35 @@
+import './App.css';
+
+const Hello = (props) => {
+  return (
+    <div>
+      Hello {props.name}, you are {props.age} years old
+    </div>
+  )
+}
+function App() {
+  const now = new Date()
+  const a = 10
+  const b = 20
+
+  return (
+    <div>
+      <p>Hello world, it is {now.toString()}</p>
+      <p>
+        {a} plus {b} is {a + b}
+      </p>
+      <Hello name="Maya" />
+      <Hello name="Pekka" />
+    </div>
+  );
+}
+
+
+export default App;
+O/P:
+Hello world, it is Sat Jun 05 2021 15:29:24 GMT+0530 (India Standard Time)
+
+10 plus 20 is 30
+
+Hello Maya, you are years old
+Hello Pekka, you are years old
