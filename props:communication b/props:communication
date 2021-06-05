@@ -18,8 +18,8 @@ function App() {
       <p>
         {a} plus {b} is {a + b}
       </p>
-      <Hello name="Maya" />
-      <Hello name="Pekka" />
+      <Hello name="Maya" age={19}/>
+      <Hello name="Pekka" age={20+16}/>
     </div>
   );
 }
@@ -31,5 +31,5 @@ Hello world, it is Sat Jun 05 2021 15:29:24 GMT+0530 (India Standard Time)
 
 10 plus 20 is 30
 
-Hello Maya, you are years old
-Hello Pekka, you are years old
+Hello Maya, you are 19 years old
+Hello Pekka, you are 36 years old
